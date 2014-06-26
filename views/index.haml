@@ -1,0 +1,45 @@
+.main
+  %h2 LOGO
+
+  .right.temp
+    %p Temp:
+    %span 32
+    \ /
+    %input{ type: "text", value: 50 }
+    %input{ type: "submit", value: "SET" }
+
+
+  .relay_btn
+    %p Riscaldatore
+    /(Rele' 5)
+    %button.btn OFF
+
+  .relay_btn
+    %p Pompa
+    /(Rele' 3)
+    %button.btn OFF
+
+  .relay_btn
+    %p Motore
+    /(Rele' 2)
+    %button.btn OFF
+
+  .relay_btn
+    %p Spia livello
+    /(Ingresso digitale 4)
+    %button.btn OFF
+
+
+.canvas
+  #water
+
+
+/ sensore temperatura
+/ sensore elettricita'
+
+
+/
+  priorita'
+  orologio
+  termometro
+  relay 5
