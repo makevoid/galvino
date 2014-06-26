@@ -16,3 +16,14 @@ env = ENV["RACK_ENV"] || "development"
 # DataMapper.setup :default, "mysql://localhost/galvino_#{env}"
 require_all "#{path}/models"
 # DataMapper.finalize
+
+
+
+########
+
+
+require "arduino_firmata"
+
+INO = ArduinoFirmata.connect
+
+

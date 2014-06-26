@@ -8,6 +8,12 @@ class Galvino < Sinatra::Base
   get "/" do
     haml :index
   end
+
+  post "/" do
+    INO.digital_write 2, true
+    sleep 4
+    INO.digital_write 2, false
+  end
 end
 
 require_all "#{path}/routes"

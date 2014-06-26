@@ -8,6 +8,8 @@ gem "voidtools"
 gem "haml"
 gem "sass"
 
+gem "arduino_firmata"
+
 group :development do
   #gem "guard"
   #gem "guard-sass",         require: false
